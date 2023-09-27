@@ -211,9 +211,18 @@ footer img {
 @media (max-width: 701px) {
   .container {
     width: 60%;
-    /* padding: 20px; */
-
-    
+  }
+  /* .nav-item .card {
+    font-size: 10px;
+  }  */
+  nav > a {
+    font-size: 10px;
+  } 
+  .about > p {
+    font-size: 14px;
+  }
+  .education > ul > li {
+    font-size: 14px;
   }
  
   .avatar {
@@ -260,6 +269,18 @@ footer img {
   li {
     font-size: 20px;
   }
+}
+@media (max-width: 590px) {
+  .footer-git h3, .footer-year h3{
+    font-size: 14px;
+  }
+  .projects__img {
+    width: 160px;
+    height: 100px;
+  }
+  .projects > ul {
+    gap: 30px;
+  } 
 }
 
 
