@@ -1,7 +1,7 @@
 
 const btnRu = document.querySelector('.lang-switch');
 let engLang = document.querySelectorAll('.eng');
-let ruLang = document.querySelector('.ru');
+let ruLang = document.querySelectorAll('.ru');
 
 function toggleLang() { 
   changeBtn();
@@ -16,19 +16,23 @@ function changeBtn() {
 }
 
 function changeClassLang() { 
-  // if (ruLang.style.display === 'none' && (engLang.style.display === 'inline-block' || engLang.style.display === 'block')) {
-  //   engLang.style.display = 'none';
-  //   ruLang.style.display = 'inline-block';
-  // }
-  engLang.classList.add('unvisible');
-  // ruLang.style.display = 'inline-block';
+
+  engLang.forEach(el => {
+    if (el.classList.contains('unvisible')) {
+      return el.classList.remove('unvisible');
+    } else if (!el.classList.contains('unvisible'))
+    return el.classList.add('unvisible');
+  })
+  ruLang.forEach(el => {
+    if (el.classList.contains('unvisible')) {
+      return el.classList.remove('unvisible');
+    } else if (!el.classList.contains('unvisible'))
+    return el.classList.add('unvisible');
+  })
+  
+
 }
 
-// ru.style.display = 'inline-block';
 
 btnRu.addEventListener('click', toggleLang);
-// engLang.addEventListener('click', () => {
-//   console.log('+');
-// });
-console.log(engLang.classList.contains('eng'));
-console.log(engLang.classList.value);
+

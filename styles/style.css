@@ -138,7 +138,7 @@ ul {
 
 .projects__img {
   display: block;
-  width: 200px;
+  width: 180px;
   height: 120px;
   border-radius: 20px;
   box-shadow: 10px 10px 14px rgba(0, 0, 0, 0.5);
@@ -169,8 +169,17 @@ footer img {
   font-weight: 900;
   letter-spacing: 5px;
 }
-
 @media (max-width: 820px) {
+  .projects > ul {
+    padding: 0 20px 0 20px;
+  }
+  .projects__img {
+    width: 180px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 920px) {
   nav {
   margin-left: 20px;
   width: 70%;
@@ -188,7 +197,7 @@ footer img {
   }
 
   .projects__img {
-    width: 180px;
+    width: 140px;
     height: 100px;
   }
 
