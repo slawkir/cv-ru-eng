@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV</title>
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <!-- <label class="checkbox-green">
+        <input type="checkbox">
+        <span class="checkbox-green-switch" data-label-ru="RU" data-label-eng="ENG"></span>
+      </label> -->
+      <button class="lang-switch">ENG</button>
+      <nav>
+        
+        <a href="#about" class="nav-item card eng">About me</a>
+        <a href="#about" class="nav-item card ru unvisible">Обо мне</a>
+        <a href="#skills" class="nav-item card eng">Skills</a>
+        <a href="#skills" class="nav-item card ru unvisible">Навыки</a>
+        <a href="#code" class="nav-item card eng">Code-example</a>
+        <a href="#code" class="nav-item card ru unvisible">Пример кода</a>
+        <a href="#projects" class="nav-item card eng">Projects</a>
+        <a href="#projects" class="nav-item card ru unvisible">Проекты</a>
+        <a href="#education" class="nav-item card eng">Education</a>
+        <a href="#education" class="nav-item card ru unvisible">Образование</a>
+        <a href="#foreign" class="nav-item card eng">Foreign languages</a>
+        <a href="#foreign" class="nav-item card ru unvisible">Иностранные языки</a>
+      </nav>
+      <div class="avatar">
+        <img src="./images/viacheslav.jpg" alt="Viacheslav">
+        <div class="card">
+          <h1 class="eng">Viacheslav Kiryukhin</h1>
+          <h1 class="ru unvisible">Вячеслав Кирюхин</h1>
+          <ul>
+            <li>
+              <a href="tel:+79372652131">+7-937-265-21-31</a>
+            </li>
+            <li>
+              <a href="mailto:slawkir1984@gmail.com">slawkir1984@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+    </header>
+    <main>
+      <section class="about card" id="about">
+        <h2 class="eng">About me</h2>
+        <h2 class="ru unvisible">Обо мне</h2>
+        <p class="eng">
+          I am 38. I am manager (office-worker). I like sport, I like to travel and programming I learn frontend-developpment. My goal is to become a front-end developer and get a job on this direction. I realized that when you study step by step it becomes easy to understand almost everything. Every day I try to do something that could make me closer to my purpose, it can be tasks (JS), working on project (web-sites development). I am currently working on the Culture Committee. I am responsible for the activities of libraries and music school in the informational and technical fields.
+        </p>
+        <p class="ru unvisible">
+          Мне 38 лет. Я работаю в сфере управления. Люблю спорт, люблю путешествовать и программировать, изучаю frontend-разработку. Моя цель — стать фронтенд-разработчиком и получить работу в этой сфере. Я понял, что когда учишься шаг за шагом, становится легко понять практически все. Каждый день я стараюсь сделать что-то, что может приблизить меня к моей цели. Это могут быть различные задачи по JS, работа над проектами, верстка веб-сайтов. В данный момент я работаю в комитете по культуре. Отвечаю за деятельность библиотек и музыкальных школ в информационно-технической сфере.
+        </p>
+      </section>
+      <section class="skills card" id="skills">
+        <h2 class="eng">Skills</h2>
+        <h2 class="ru unvisible">Навыки</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Git</li>
+        </ul>
+      </section>
+      <section class="code card" id="code">
+        <h2 class="eng">Code-example</h2>
+        <h2 class="ru unvisible">Пример кода</h2>
+        <pre><code>
+          let isDivideBy = (number, a, b) => {
+            if (number % a === 0 && number % b === 0) {
+              return true;
+            } else {
+              return false
+            }
+          }
+        </code></pre>
+      </section>
+      <section class="projects card" id="projects">
+        <h2 class="eng">Projects</h2>
+        <h2 class="ru unvisible">Проекты</h2>
+        <ul>
+          <li>
+            <a href="https://rolling-scopes-school.github.io/slawkir-JSFEPRESCHOOL2023Q2/library/">
+              <figure>
+                <img src="./images/Library.jpg" alt="" class="projects__img">
+                <figcaption>Library</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="https://competent-archimedes-598214.netlify.app/">
+              <figure>
+                <img src="./images/Drumn.jpg" alt="" class="projects__img">
+                <figcaption>Drumn-Kit</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="https://rolling-scopes-school.github.io/slawkir-JSFE2021Q1/match-game/">
+              <figure>
+                <img src="./images/Memory.jpg" alt="" class="projects__img">
+                <figcaption>Memory game</figcaption>
+              </figure>
+            </a>  
+          </li>
+          <li>
+            <a href="https://rolling-scopes-school.github.io/slawkir-JSFE2021Q1/virtual-piano/">
+              <figure>
+                <img src="./images/Piano.jpg" alt="" class="projects__img">
+                <figcaption>Virtual piano</figcaption>
+              </figure>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="education card" id="education">
+        <h2 class="eng">Education</h2>
+        <h2 class="ru unvisible">Образование</h2>
+        <ul>
+          <li class="eng">2002-2007, Academy of Public Administration (Russia, Saratov)</li>
+          <li class="ru unvisible">2002-2007, Повожская академия государственной службы (Россия, Саратов)</li>
+          <li>2008-2009, Школа управления и финансов (Германия, Людвигсбург)</li>
+          <li class="eng">2021, ITGid. HTML for JavaScript-developer</li>
+          <li class="ru unvisible">2021, ITGid. Вебразработка</li>
+          <li class="eng">2021, RSS (Rolling Scope School), JavaScript - Frontend</li>
+          <li class="ru unvisible">2021, RSS (Rolling Scope School), JavaScript - Frontend</li>
+          <li class="eng">2022, EPAM Sistems, .Net/Frontend - Development</li>
+          <li class="ru unvisible">2022, EPAM Sistems, .Net/Frontend - разработка</li>
+
+        </ul>
+      </section>
+      <section class="foreign card" id="foreign">
+        <h2 class="eng">Foreign languages</h2>
+        <h2>Иностранные языки</h2>
+        <ul>
+          <li class="eng">English, A2</li>
+          <li class="ru unvisible">Английский, A2</li>
+          <li class="eng">German, B1</li>
+          <li class="ru unvisible">Немецкий, B1</li>
+        </ul>
+      </section>
+    </main>
+    <footer class="card">
+      <div class="footer-git">
+        <a href="https://www.github.com/slawkir"><h3>GithubAccount</h3></a>
+      </div>
+      <div class="footer-year"><h3>2023</h3></div>
+    </footer>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
